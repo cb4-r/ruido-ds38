@@ -36,11 +36,11 @@ describe("casos reales: informe ETFA Acustec, 22-04-2021", () => {
 });
 
 describe("casos reales: reportes 2025 y ejemplo del protocolo SMA", () => {
-  const [elam, montanita, protocolo] = subidos.casos;
+  const [interna2025, externa2025, protocolo] = subidos.casos;
 
   it("Reporte 2025-09: interna, ventana abierta, nocturno, supera", () => {
     const r = evaluar(
-      { zona: "II", periodo: "nocturno", tipo: "interna", ventana: "abierta", mediciones: elam!.mediciones as never },
+      { zona: "II", periodo: "nocturno", tipo: "interna", ventana: "abierta", mediciones: interna2025!.mediciones as never },
       reglas,
     );
     expect(r.promedioRedondeado).toBe(47);
@@ -52,7 +52,7 @@ describe("casos reales: reportes 2025 y ejemplo del protocolo SMA", () => {
 
   it("Reporte 2025-11: externa, nocturno, supera", () => {
     const r = evaluar(
-      { zona: "III", periodo: "nocturno", tipo: "externa", mediciones: montanita!.mediciones.map((m) => ({ punto: 1, ...m })) },
+      { zona: "III", periodo: "nocturno", tipo: "externa", mediciones: externa2025!.mediciones.map((m) => ({ punto: 1, ...m })) },
       reglas,
     );
     expect(r.npc).toBe(57);
