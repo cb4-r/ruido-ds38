@@ -1,0 +1,13 @@
+{
+  "name": "ruido-ds38",
+  "private": true,
+  "type": "module",
+  "workspaces": ["calc", "server", "web"],
+  "scripts": {
+    "build": "npm run build -w web && npm run plantilla -w server",
+    "start": "npm run start -w server",
+    "dev:web": "npm run dev -w web",
+    "test": "npm test -w calc && npm test -w server",
+    "demo": "npm run build && npm start"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "ds38-2011",
+  "version": "1",
+  "norma": "D.S. N° 38/2011 MMA",
+  "vigencia": { "desde": "2014-06-13", "hasta": "2028-08-26" },
+  "fuente": "https://www.bcn.cl/leychile/navegar?idNorma=1040928",
+  "procedimiento": {
+    "tipo": "ds38-npseq-npsmax",
+    "medicionesPorPunto": 3,
+    "puntos": { "externa": 1, "interna": 3 },
+    "restaNpsMax": 5,
+    "articulos": { "tecnica": "17 b)", "valor": "18 a)", "redondeo": "18 b)", "ventana": "18 c)", "fondo": "19" }
+  },
+  "limites": {
+    "articulo": "7, Tabla N° 1",
+    "I": { "diurno": 55, "nocturno": 45 },
+    "II": { "diurno": 60, "nocturno": 45 },
+    "III": { "diurno": 65, "nocturno": 50 },
+    "IV": { "diurno": 70, "nocturno": 70 }
+  },
+  "rural": { "articulo": "9", "sumaAlFondo": 10, "zonaTope": "III" },
+  "correccionVentana": { "articulo": "18 c), Tabla N° 2", "abierta": 5, "cerrada": 10 },
+  "correccionFondo": {
+    "articulo": "19 e), Tabla N° 3",
+    "tramos": [
+      { "diferenciaMin": 10, "correccion": 0 },
+      { "diferenciaMin": 6, "correccion": -1 },
+      { "diferenciaMin": 4, "correccion": -2 },
+      { "diferenciaMin": 3, "correccion": -3 }
+    ],
+    "nulaBajo": 3
+  },
+  "ruidoFondo": { "articulo": "19 b)", "minRegistros": 2, "maxRegistros": 6, "estabilizacionMaxDif": 2 }
+}

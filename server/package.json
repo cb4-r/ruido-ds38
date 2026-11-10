@@ -1,0 +1,27 @@
+{
+  "name": "@ruido-ds38/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "plantilla": "tsx src/plantilla/crear-plantilla.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@ruido-ds38/calc": "*",
+    "better-sqlite3": "^11.5.0",
+    "docx": "^9.0.0",
+    "docx-templates": "^4.13.0",
+    "express": "^4.21.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "fuente": "Informe ETFA 059-01 (Acustec), INF_INS N°078192018_Abr2021_vA, Obra Parque Inundable Víctor Jara Etapa 3, medición 22-04-2021, periodo diurno, mediciones externas (1 punto)",
+  "url": "https://parquevictorjara.cl/wp-content/uploads/2021/05/Informe-de-Monitoreo-de-Ruido-%E2%80%93-abril-2021.pdf",
+  "casos": [
+    {"receptor": 1, "zona": "III", "periodo": "diurno", "tipo": "externa",
+     "mediciones": [{"eq": 63.7, "min": 59.1, "max": 68.6}, {"eq": 65.3, "min": 60.9, "max": 69.3}, {"eq": 62.4, "min": 53.0, "max": 68.3}],
+     "ruido_fondo": 64, "esperado": {"promedio": 64, "npc": "nulo", "limite": 65, "estado": "No Supera"}},
+    {"receptor": 2, "zona": "II", "periodo": "diurno", "tipo": "externa",
+     "mediciones": [{"eq": 58.5, "min": 55.7, "max": 62.3}, {"eq": 58.5, "min": 54.1, "max": 64.5}, {"eq": 59.3, "min": 55.3, "max": 64.7}],
+     "ruido_fondo": null, "esperado": {"promedio": 59, "npc": 59, "limite": 60, "estado": "No Supera"}},
+    {"receptor": 3, "zona": "II", "periodo": "diurno", "tipo": "externa",
+     "mediciones": [{"eq": 56.6, "min": 53.3, "max": 59.3}, {"eq": 56.6, "min": 49.8, "max": 64.4}, {"eq": 54.5, "min": 49.3, "max": 60.6}],
+     "ruido_fondo": null, "esperado": {"promedio": 57, "npc": 57, "limite": 60, "estado": "No Supera"}},
+    {"receptor": 4, "zona": "II", "periodo": "diurno", "tipo": "externa",
+     "mediciones": [{"eq": 60.4, "min": 55.5, "max": 65.2}, {"eq": 58.4, "min": 53.8, "max": 62.7}, {"eq": 58.7, "min": 49.5, "max": 66.2}],
+     "ruido_fondo": null, "esperado": {"promedio": 60, "npc": 60, "limite": 60, "estado": "No Supera"}}
+  ]
+}

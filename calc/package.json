@@ -1,0 +1,19 @@
+{
+  "name": "@ruido-ds38/calc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./utm": "./src/utm.ts"
+  },
+  "main": "./src/index.ts"
+}

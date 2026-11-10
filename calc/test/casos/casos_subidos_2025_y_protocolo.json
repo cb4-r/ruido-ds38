@@ -1,0 +1,19 @@
+{
+  "casos": [
+    {"id": "reporte_2025-09_interna", "fuente": "Reporte técnico real de septiembre 2025 (datos de identificación omitidos)",
+     "zona": "II", "periodo": "nocturno", "tipo": "interna", "ventana": "abierta",
+     "mediciones": [
+       {"punto": 1, "eq": 46.2, "min": 43.0, "max": 50.2}, {"punto": 1, "eq": 46.3, "min": 43.5, "max": 49.9}, {"punto": 1, "eq": 45.1, "min": 39.0, "max": 51.5},
+       {"punto": 2, "eq": 46.6, "min": 44.1, "max": 49.2}, {"punto": 2, "eq": 47.2, "min": 44.4, "max": 49.7}, {"punto": 2, "eq": 46.6, "min": 44.6, "max": 50.9},
+       {"punto": 3, "eq": 49.4, "min": 45.3, "max": 51.6}, {"punto": 3, "eq": 47.4, "min": 38.8, "max": 51.3}, {"punto": 3, "eq": 46.7, "min": 41.9, "max": 51.6}],
+     "ruido_fondo": null, "esperado": {"promedio": 47, "correccion_ventana": 5, "npc": 52, "limite": 45, "estado": "Supera"}},
+    {"id": "reporte_2025-11_externa", "fuente": "Reporte técnico real de noviembre 2025 (datos de identificación omitidos)",
+     "zona": "III", "periodo": "nocturno", "tipo": "externa", "nota": "balcón en piso 8, tratado como medición externa",
+     "mediciones": [{"eq": 60.2, "min": 57.1, "max": 62.1}, {"eq": 55.3, "min": 52.5, "max": 59.2}, {"eq": 54.5, "min": 52.2, "max": 56.8}],
+     "ruido_fondo": null, "esperado": {"promedio": 57, "npc": 57, "limite": 50, "estado": "Supera"}},
+    {"id": "protocolo_867_ejemplo", "fuente": "Res. Ex. SMA 867/2016, sección 7.3.3 iv, Tabla 7",
+     "tipo": "externa",
+     "mediciones": [{"eq": 68.5, "min": 51.2, "max": 76.3}, {"eq": 70.2, "min": 54.2, "max": 75.4}, {"eq": 70.8, "min": 56.3, "max": 80.4}],
+     "ruido_fondo_registros": [50.2, 51.3], "esperado": {"ruido_fondo": 51, "npc": 72}}
+  ]
+}
